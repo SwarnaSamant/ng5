@@ -18,8 +18,8 @@
       </form>
     </div>
     <div class="col">
-        <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeitem(i)">
-         {{goal}}
+        <p class="life-container" *ngFor="let goal of goals; let i = index">
+         {{goal}} <span class="delete-list" (click)="removeitem(i)"><i class="material-icons">delete</i></span>
         </p>
       </div>
   </div>

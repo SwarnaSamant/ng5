@@ -53,6 +53,7 @@ export class HomeComponent implements OnInit {
   removeitem(i) {
     this.goals.splice(i, 1);
     this._data.changeGola(this.goals);
+    this.itemList = this.goals.length;
   }
 
 }
